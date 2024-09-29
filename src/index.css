@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #E9EFEC; /* Very Light Gray */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #16423C; /* Dark Green */
+  text-align: center;
+}
+
+.App {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  background: #C4DAD2; /* Light Grayish Green */
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: calc(50% - 10px);
+  padding: 10px;
+  font-size: 16px;
+  border: none; /* Remove border */
+   box-sizing: border-box;
+  background-color: #E9EFEC; /* Very Light Gray */
+  color: #16423C; /* Dark Green */
+  outline: none; /* Remove outline on focus */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Input Focus Style */
+input:focus {
+  background-color: #F0F0F0; /* Change background on focus for better visibility */
+}
+
+/* Placeholder Style */
+input::placeholder {
+  color: #6A9C89; /* Muted Green */
+}
+
+/* Button Styles */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #16423C; /* Dark Green */
+  border: none;
+   cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #143b32; /* Slightly darker for hover */
+}
+
+/* Employee List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #E9EFEC; /* Very Light Gray */
+   margin-bottom: 10px;
+  padding: 15px;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li strong {
+  font-size: 18px;
+  color: #16423C; /* Dark Green */
+}
+
+li button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #6A9C89; /* Muted Green */
+  border: none;
+   cursor: pointer;
+  color: #fff;
+}
+
+li button:hover {
+  background-color: #5a7b75; /* Darker muted green for hover */
+}
+
+li button.edit {
+  background-color: #C4DAD2; /* Light Grayish Green */
+}
+
+li button.edit:hover {
+  background-color: #B0C1BF; /* Slightly darker gray for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
